@@ -17,7 +17,7 @@ jQuery(document).on('copy', function(t) {
 			if (window.clipboardData) {
 				return window.clipboardData.setData("text", selected + copyFooter);
 			}
-			(a = document.createElement("textarea")).style.cssText = "position: fixed;z-index: -10;top: -50px;left: -50px;",
+			(a = document.createElement("textarea")).style.cssText = "position: fixed;z-index: -100;top: -500px;left: -500px;",
 			a.innerHTML = selected + copyFooter,
 			document.getElementsByTagName('body')[0].appendChild(a),
 			a.select(),
